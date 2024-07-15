@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.jhi.v6105",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "monolith",
+    "baseName": "dspUpgrage",
+    "packageName": "com.jhi.v6105",
+    "packageFolder": "com/jhi/v6105",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NDgwZmEyYzYwMDQzOTA1YmI5ZGM5ODI3MTRhNTk4ZTJlNzE2MDQwMGZiOGU4YTQ1YTliYTAxZDUwYWU2NWVlMmM3ZWQxOTNmNTBjZWM1MjRlMWZjZDJiYTdlNjRhNzc5ODhlYzY1NjI5ZjgyN2RmYTJjYjBlZDBhMzhmMjVkOTk=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1721030662340,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en"],
+    "blueprints": [],
+    "reactive": true
+  }
+}
