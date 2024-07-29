@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.jhi.v671",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.7.1",
+    "applicationType": "monolith",
+    "baseName": "jhipster",
+    "packageName": "com.jhi.v671",
+    "packageFolder": "com/jhi/v671",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "oracle",
+    "prodDatabaseType": "oracle",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "Njg1ZTQ0OTAwN2RjNTFjYTE1Y2E2M2I0YzI3MzkwZTFlMzkyNGQ5ODBmOTk4ZTE4ZTYyNWQ2ZjFjZGI5NTQ3MzgxOGI1Y2VkNjNkMTYwMmM4YWQ0MDUxOTAyMzQzY2QwNTYzOTgxZDdkOWNjNmM2ODhmNGVlODFhMWNiOTdiZjE=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1722261830473,
+    "testFrameworks": ["cucumber", "protractor"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en"],
+    "blueprints": []
+  }
+}
