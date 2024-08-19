@@ -18,13 +18,13 @@ spring:
     # Uncomment the following line to enable tests against production database type rather than H2, using Testcontainers
     #active: testcontainers
   application:
-    name: jh701Angular11
+    name: jH701Angular11WithoutIntl
   jackson:
     serialization:
       write-durations-as-timestamps: false
   liquibase:
     contexts: test
-    url: jdbc:h2:mem:jh701angular11;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:mem:jh701angular11withoutintl;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
   mail:
     host: localhost
   main:
@@ -32,18 +32,18 @@ spring:
   messages:
     basename: i18n/messages
   r2dbc:
-    url: r2dbc:h2:mem:///jh701angular11;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    url: r2dbc:h2:mem:///jh701angular11withoutintl;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     username: r2dbc
     password:
   task:
     execution:
-      thread-name-prefix: jh-701-angular-11-task-
+      thread-name-prefix: j-h-701-angular-11-without-intl-task-
       pool:
         core-size: 1
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: jh-701-angular-11-scheduling-
+      thread-name-prefix: j-h-701-angular-11-without-intl-scheduling-
       pool:
         size: 1
   thymeleaf:
@@ -61,7 +61,7 @@ server:
 
 jhipster:
   clientApp:
-    name: 'jh701Angular11App'
+    name: 'jH701Angular11WithoutIntlApp'
   logging:
     # To test json console appender
     use-json-format: false
@@ -77,7 +77,7 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 (you can type `echo 'secret-key'|base64` on your command line)
-        base64-secret: ZWY1ZTU4Njg3YWUxMGU1NDIyYzg1NDcwMWUxODkxMDI4OTFjYjFmZjlhOGRiZDA0NzNkYjg5MTEyYjk4YWFhZDE3OTM0NjNhODY3YmNhODBkMjhkZGI2YTllNWYwNzRlMDYyZDE5ZTgxNTc4NWYxNDcyMjRmNDJlNzIxZjYzMTE=
+        base64-secret: MWUwZTA5OGE2NDlmODBkMWQ3OTllOTE1OTNhMjhkMmFlZmZhOWMzZjUzNTY4ZDhhYjU2ZDcyYTRkZTM0N2I4Mzg2MmQ2MzEyNmMyZDc3YTk0YTViYTdhZDU4MDFjYzlhNjRlZmVlM2U1NzhiZDhlYjBhOTk1MWYwZGE3NmI2NGU=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
 # ===================================================================

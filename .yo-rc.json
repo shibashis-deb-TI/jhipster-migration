@@ -2,7 +2,7 @@
   "generator-jhipster": {
     "blueprints": [],
     "applicationType": "monolith",
-    "baseName": "jh701Angular11",
+    "baseName": "jH701Angular11WithoutIntl",
     "jhipsterVersion": "7.0.1",
     "skipClient": false,
     "skipServer": false,
@@ -14,11 +14,11 @@
     "dtoSuffix": "DTO",
     "testFrameworks": [],
     "pages": [],
-    "creationTimestamp": 1724054795234,
+    "creationTimestamp": 1724055523545,
     "serviceDiscoveryType": false,
     "reactive": true,
     "authenticationType": "jwt",
-    "packageName": "com.jh701_ang11_intl",
+    "packageName": "com.jh",
     "serverPort": "8080",
     "cacheProvider": "no",
     "enableHibernateCache": false,
@@ -34,13 +34,13 @@
     "clientFramework": "angularX",
     "withAdminUi": true,
     "clientTheme": "none",
-    "enableTranslation": true,
+    "enableTranslation": false,
     "nativeLanguage": "en",
-    "packageFolder": "com/jh701_ang11_intl",
-    "jwtSecretKey": "ZWY1ZTU4Njg3YWUxMGU1NDIyYzg1NDcwMWUxODkxMDI4OTFjYjFmZjlhOGRiZDA0NzNkYjg5MTEyYjk4YWFhZDE3OTM0NjNhODY3YmNhODBkMjhkZGI2YTllNWYwNzRlMDYyZDE5ZTgxNTc4NWYxNDcyMjRmNDJlNzIxZjYzMTE=",
+    "packageFolder": "com/jh",
+    "jwtSecretKey": "MWUwZTA5OGE2NDlmODBkMWQ3OTllOTE1OTNhMjhkMmFlZmZhOWMzZjUzNTY4ZDhhYjU2ZDcyYTRkZTM0N2I4Mzg2MmQ2MzEyNmMyZDc3YTk0YTViYTdhZDU4MDFjYzlhNjRlZmVlM2U1NzhiZDhlYjBhOTk1MWYwZGE3NmI2NGU=",
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
-    "languages": ["en"],
-    "otherModules": []
+    "otherModules": [],
+    "languages": ["en", "fr"]
   }
 }

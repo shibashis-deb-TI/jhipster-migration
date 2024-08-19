@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "jh-701-angular-11": {
+    "j-h-701-angular-11-without-intl": {
       "root": "",
       "sourceRoot": "src/main/webapp",
       "projectType": "application",
@@ -66,12 +66,12 @@
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
-            "browserTarget": "jh-701-angular-11:build",
+            "browserTarget": "j-h-701-angular-11-without-intl:build",
             "proxyConfig": "./webpack/proxy.conf.js"
           },
           "configurations": {
             "production": {
-              "browserTarget": "jh-701-angular-11:build:production"
+              "browserTarget": "j-h-701-angular-11-without-intl:build:production"
             }
           }
         },
@@ -93,7 +93,7 @@
       "prefix": "jhi"
     }
   },
-  "defaultProject": "jh-701-angular-11",
+  "defaultProject": "j-h-701-angular-11-without-intl",
   "cli": {
     "packageManager": "npm"
   }
