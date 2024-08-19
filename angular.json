@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "dsp-upgrade-ang-11": {
+    "jh-701-angular-11": {
       "root": "",
       "sourceRoot": "src/main/webapp",
       "projectType": "application",
@@ -66,12 +66,12 @@
         "serve": {
           "builder": "@angular-builders/custom-webpack:dev-server",
           "options": {
-            "browserTarget": "dsp-upgrade-ang-11:build",
+            "browserTarget": "jh-701-angular-11:build",
             "proxyConfig": "./webpack/proxy.conf.js"
           },
           "configurations": {
             "production": {
-              "browserTarget": "dsp-upgrade-ang-11:build:production"
+              "browserTarget": "jh-701-angular-11:build:production"
             }
           }
         },
@@ -93,7 +93,7 @@
       "prefix": "jhi"
     }
   },
-  "defaultProject": "dsp-upgrade-ang-11",
+  "defaultProject": "jh-701-angular-11",
   "cli": {
     "packageManager": "npm"
   }

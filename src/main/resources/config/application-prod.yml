@@ -17,7 +17,7 @@ logging:
   level:
     ROOT: INFO
     tech.jhipster: INFO
-    com.jh700: INFO
+    com.jh701_ang11_intl: INFO
 
 management:
   metrics:
@@ -34,22 +34,22 @@ spring:
   # Replace by 'prod, faker' to add the faker context and have sample data loaded in production
   liquibase:
     contexts: prod
-    url: jdbc:postgresql://localhost:5432/dspUpgradeAng11
+    url: jdbc:mysql://localhost:3306/jh701Angular11?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
   mail:
     host: localhost
     port: 25
     username:
     password:
   r2dbc:
-    url: r2dbc:postgresql://localhost:5432/dspUpgradeAng11
-    username: dspUpgradeAng11
+    url: r2dbc:mysql://localhost:3306/jh701Angular11?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
+    username: root
     password:
   thymeleaf:
     cache: true
 
 # ===================================================================
 # To enable TLS in production, generate a certificate using:
-# keytool -genkey -alias dspupgradeang11 -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
+# keytool -genkey -alias jh701angular11 -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
 #
 # You can also use Let's Encrypt:
 # https://maximilian-boehm.com/hp2121/Create-a-Java-Keystore-JKS-from-Let-s-Encrypt-Certificates.htm
@@ -92,7 +92,7 @@ jhipster:
         # - In the JHipster Registry (which includes a Spring Cloud Config server)
         # - In a separate `application-prod.yml` file, in the same folder as your executable JAR file
         # - In the `JHIPSTER_SECURITY_AUTHENTICATION_JWT_BASE64_SECRET` environment variable
-        base64-secret: MWEzZjAwODYyNDE4NDkwOWUyNzBkZmMxMjgwOTQ1NmYwNzg2YTkzMDFiMWRlOTg4NTQxNTU2Mzg1MGQ2N2I1YjExYjc4YTE0OTlkZDgyZTYxMzQ4YTQ1MjI4MjhmNDc0ZjkzY2MyMjk1YWViZjc5MDRjMjEyYWQ0OTg2MjY2MWQ=
+        base64-secret: ZWY1ZTU4Njg3YWUxMGU1NDIyYzg1NDcwMWUxODkxMDI4OTFjYjFmZjlhOGRiZDA0NzNkYjg5MTEyYjk4YWFhZDE3OTM0NjNhODY3YmNhODBkMjhkZGI2YTllNWYwNzRlMDYyZDE5ZTgxNTc4NWYxNDcyMjRmNDJlNzIxZjYzMTE=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000

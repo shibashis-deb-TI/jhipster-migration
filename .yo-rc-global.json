@@ -1,7 +1,7 @@
 {
-  "generator-jhipster:7.0.0": {
+  "generator-jhipster:7.0.1": {
     "promptValues": {
-      "packageName": "com.jh700",
+      "packageName": "com.jh701_ang11_intl",
       "nativeLanguage": "en"
     }
   }

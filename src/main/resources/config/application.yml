@@ -66,7 +66,7 @@ management:
 
 spring:
   application:
-    name: dspUpgradeAng11
+    name: jh701Angular11
   profiles:
     # The commented value for `active` can be replaced with valid Spring profiles to load.
     # Otherwise, it will be filled in by maven when building the JAR file
@@ -86,13 +86,13 @@ spring:
     allow-bean-definition-overriding: true
   task:
     execution:
-      thread-name-prefix: dsp-upgrade-ang-11-task-
+      thread-name-prefix: jh-701-angular-11-task-
       pool:
         core-size: 2
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: dsp-upgrade-ang-11-scheduling-
+      thread-name-prefix: jh-701-angular-11-scheduling-
       pool:
         size: 2
   thymeleaf:
@@ -120,22 +120,22 @@ info:
 
 jhipster:
   clientApp:
-    name: 'dspUpgradeAng11App'
+    name: 'jh701Angular11App'
   # By default CORS is disabled. Uncomment to enable.
   # cors:
-  #   allowed-origins: "*"
+  #   allowed-origins: "http://localhost:8100,http://localhost:9000"
   #   allowed-methods: "*"
   #   allowed-headers: "*"
   #   exposed-headers: "Authorization,Link,X-Total-Count,X-${jhipster.clientApp.name}-alert,X-${jhipster.clientApp.name}-error,X-${jhipster.clientApp.name}-params"
   #   allow-credentials: true
   #   max-age: 1800
   mail:
-    from: dspUpgradeAng11@localhost
+    from: jh701Angular11@localhost
   api-docs:
     default-include-pattern: ${server.servlet.context-path:}/api/.*
     management-include-pattern: ${server.servlet.context-path:}/management/.*
-    title: dspUpgradeAng11 API
-    description: dspUpgradeAng11 API documentation
+    title: jh701Angular11 API
+    description: jh701Angular11 API documentation
     version: 0.0.1
     terms-of-service-url:
     contact-name:
@@ -143,6 +143,8 @@ jhipster:
     contact-email:
     license: unlicensed
     license-url:
+  security:
+    content-security-policy: "default-src 'self'; frame-src 'self' data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://storage.googleapis.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:"
 # ===================================================================
 # Application specific properties
 # Add your own application properties here, see the ApplicationProperties class

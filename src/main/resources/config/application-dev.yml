@@ -18,25 +18,22 @@ logging:
     ROOT: DEBUG
     tech.jhipster: DEBUG
     org.hibernate.SQL: DEBUG
-    com.jh700: DEBUG
+    com.jh701_ang11_intl: DEBUG
 
 spring:
   devtools:
     restart:
       enabled: true
-      additional-exclude: static/**,.h2.server.properties
+      additional-exclude: static/**
     livereload:
       enabled: false # we use Webpack dev server + BrowserSync for livereload
   jackson:
     serialization:
       indent-output: true
-  h2:
-    console:
-      enabled: false
   liquibase:
     # Remove 'faker' if you do not want the sample data to be loaded automatically
     contexts: dev, faker
-    url: jdbc:h2:file:./target/h2db/db/dspupgradeang11;DB_CLOSE_DELAY=-1
+    url: jdbc:mysql://localhost:3306/jh701Angular11?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
   mail:
     host: localhost
     port: 25
@@ -45,8 +42,8 @@ spring:
   messages:
     cache-duration: PT1S # 1 second, see the ISO 8601 standard
   r2dbc:
-    url: r2dbc:h2:file://././target/h2db/db/dspupgradeang11;DB_CLOSE_DELAY=-1
-    username: dspUpgradeAng11
+    url: r2dbc:mysql://localhost:3306/jh701Angular11?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
+    username: root
     password:
   thymeleaf:
     cache: false
@@ -64,7 +61,7 @@ jhipster:
   # CORS is only enabled by default with the "dev" profile
   cors:
     # Allow Ionic for JHipster by default (* no longer allowed in Spring Boot 2.4+)
-    allowed-origins: 'http://localhost:8100'
+    allowed-origins: 'http://localhost:8100,http://localhost:9000'
     allowed-methods: '*'
     allowed-headers: '*'
     exposed-headers: 'Authorization,Link,X-Total-Count,X-${jhipster.clientApp.name}-alert,X-${jhipster.clientApp.name}-error,X-${jhipster.clientApp.name}-params'
@@ -74,7 +71,7 @@ jhipster:
     authentication:
       jwt:
         # This token must be encoded using Base64 and be at least 256 bits long (you can type `openssl rand -base64 64` on your command line to generate a 512 bits one)
-        base64-secret: MWEzZjAwODYyNDE4NDkwOWUyNzBkZmMxMjgwOTQ1NmYwNzg2YTkzMDFiMWRlOTg4NTQxNTU2Mzg1MGQ2N2I1YjExYjc4YTE0OTlkZDgyZTYxMzQ4YTQ1MjI4MjhmNDc0ZjkzY2MyMjk1YWViZjc5MDRjMjEyYWQ0OTg2MjY2MWQ=
+        base64-secret: ZWY1ZTU4Njg3YWUxMGU1NDIyYzg1NDcwMWUxODkxMDI4OTFjYjFmZjlhOGRiZDA0NzNkYjg5MTEyYjk4YWFhZDE3OTM0NjNhODY3YmNhODBkMjhkZGI2YTllNWYwNzRlMDYyZDE5ZTgxNTc4NWYxNDcyMjRmNDJlNzIxZjYzMTE=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000
